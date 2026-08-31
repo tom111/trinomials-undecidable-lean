@@ -121,8 +121,8 @@ theorem sum_smul_C (d : Fin N → ℚ) : (∑ i, d i • BaseAlgebra.C i) = ⟨0
 /-- **Lemma 2.2**, the normal form: for all `a, b ∈ ℤ` and `d ∈ ℤ^N`,
 `S^a T^b D^d ≡ 2^{−a−b} ((1+B)^a (1−B)^b + Σᵢ dᵢ Cᵢ) (mod J₀)`, where `(1±B)^a` are the
 integer powers of the units of `lemma_J0_nf_units`.  The truncated binomial series
-`(1+εB)^a = Σ_{k<5} (a choose k) ε^k B^k` used in the paper's proof, with mathlib's
-generalized binomial coefficient `Ring.choose`, is `uBe_zpow`. -/
+`(1+εB)^a = Σ_{k<5} (a choose k) ε^k B^k` used in the paper's proof of Proposition 2.4,
+with mathlib's generalized binomial coefficient `Ring.choose`, is `uBe_zpow`. -/
 theorem lemma_J0_nf (x : Exponent N) :
     baseQuotEquiv N (Ideal.Quotient.mk (baseIdeal N) (mono x)) =
       (1 / 2 : ℚ) ^ (x.s + x.t) •
@@ -549,7 +549,7 @@ of mathlib, and `HaltsAtZero c` says that `c` halts on input `0`.  The universal
 of integer polynomials in the variable `X₀` and `haltingRel.aux` auxiliary variables), and
 `U(e, Y)` by the sparse syntax `haltingCode e = frozenCode haltingRel e`. -/
 
-/-- **The universal polynomial** (eq. (8)): `e ∈ K₀ ⟺ ∃ y : U(e, y) = 0`. -/
+/-- **The universal polynomial** (eq. (9)): `e ∈ K₀ ⟺ ∃ y : U(e, y) = 0`. -/
 theorem universal_polynomial (e : ℕ) :
     (∃ x : Fin (1 + MRDP.haltingRel.aux) → ℤ, evalPolynomial (haltingCode e) x = 0)
       ↔ HaltsAtZero (Denumerable.ofNat Code e) :=
