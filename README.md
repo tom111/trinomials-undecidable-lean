@@ -3,7 +3,8 @@
 This package formalizes
 
 > Tobias Boege, Anna Hofer, Thomas Kahle,
-> *Trinomial containment in polynomial ideals is undecidable*.
+> *Trinomial containment in polynomial ideals is undecidable*,
+> [arXiv:2608.31162](https://arxiv.org/abs/2608.31162).
 
 It is meant to be read side by side with the paper: the module layout follows the sections
 of the paper, every definition and theorem carries a docstring naming the numbered paper
@@ -216,9 +217,12 @@ The mathematics is the paper; cite it:
 
 ```bibtex
 @unpublished{BoegeHoferKahle2026,
-  author = {Boege, Tobias and Hofer, Anna and Kahle, Thomas},
-  title  = {Trinomial containment in polynomial ideals is undecidable},
-  year   = {2026},
+  author        = {Boege, Tobias and Hofer, Anna and Kahle, Thomas},
+  title         = {Trinomial containment in polynomial ideals is undecidable},
+  year          = {2026},
+  eprint        = {2608.31162},
+  archivePrefix = {arXiv},
+  primaryClass  = {math.AC},
 }
 ```
 

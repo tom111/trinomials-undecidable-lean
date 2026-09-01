@@ -55,9 +55,10 @@ import Trinomial.Examples
 # Trinomial containment in polynomial ideals is undecidable
 
 The Lean 4 formalization of *Trinomial containment in polynomial ideals is undecidable*
-by Tobias Boege, Anna Hofer and Thomas Kahle.  The modules follow
-the sections of the paper; `Trinomial/Paper.lean` restates every result of the paper in the
-paper's order and checks its axioms, and `Trinomial/Examples.lean` runs the executable parts.
+by Tobias Boege, Anna Hofer and Thomas Kahle, arXiv:2608.31162
+(https://arxiv.org/abs/2608.31162).  The modules follow the sections of the paper;
+`Trinomial/Paper.lean` restates every result of the paper in the paper's order and checks
+its axioms, and `Trinomial/Examples.lean` runs the executable parts.
 
 * §1  `ShortestPolynomial` — the number of terms and `t(I)`.
 * §2  `Base/` — the Laurent ring `L_N`, the base ideal `J₀`, `A₀ = L_N/J₀`, the two

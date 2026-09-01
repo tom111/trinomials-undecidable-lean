@@ -13,9 +13,10 @@ import Trinomial.Base.BasePrimary
 # The paper, statement by statement
 
 This file follows the paper (Boege–Hofer–Kahle, *Trinomial containment in polynomial
-ideals is undecidable*) in the paper's order and notation.  Formalized results appear as
-Lean statements with short proofs referring to the development.  A result of the paper is
-formalized exactly when its mathematical content appears here, and the docstring of each
+ideals is undecidable*, arXiv:2608.31162, https://arxiv.org/abs/2608.31162) in the paper's
+order and notation.  Formalized results appear as Lean statements with short proofs
+referring to the development.  A result of the paper is formalized exactly when its
+mathematical content appears here, and the docstring of each
 item records every deviation from the paper's wording.  The remaining omissions are listed
 before the axiom checks.  The axioms of every formalized item are printed at the end
 (`#print axioms`); all depend on `propext`, `Classical.choice`, `Quot.sound` only.
